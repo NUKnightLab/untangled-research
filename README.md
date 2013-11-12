@@ -22,6 +22,7 @@ You need to have `gcc` installed.
 
     # Clone secrets and fablib repositories
     git clone git@github.com:NUKnightLab/fablib.git
+    git clone git@github.com:NUKnightLab/secrets.git
     
     # Change into project directory
     cd <project_name>
