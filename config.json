@@ -1,0 +1,51 @@
+{
+    //
+    // name of the project as it will appear in the cdn and css/js banners
+    //
+    "name": "untangled",
+    //
+    // author string to appear in css/js banners
+    //
+    "author": "Northwestern University Knight Lab",
+    //
+    // build
+    // 
+    // These commands will be run the exact order in which they appear.
+    // This order is determined in code by fabfile/__init__.py.
+    //
+    "build": {
+        // copy files
+        // input: list of objects specifying inputs and outputs
+        //      @src: source file/directory
+        //      @dst: destination file/directory
+        //      @regex: regular expression to match files (if @src is directory)
+        //
+        "copy": [
+            {
+                "src": "website",
+                "dst": "build",
+                "regex": "(css/.*|img/.*|js/.*|.*\\.(ico|html))$"
+            }
+        ],
+        // compile less files
+        // input: list of objects specifying inputs and output
+        // input: list of objects, where
+        //      @src: source file/directory
+        //      @dst: destination file/directory
+        //      @regex: regular expression to match files (if @src is directory)
+        //
+        "lessc": [
+            {
+                "src": "website/less/site.less",
+                "dst": "build/css/site.css"
+            }
+        ]
+    },
+    //
+    // deploy
+    // input: name of the S3 bucket that will host the website 
+    //
+    "deploy": {
+        "bucket": "untangled.knightlab.com"
+    }
+}
