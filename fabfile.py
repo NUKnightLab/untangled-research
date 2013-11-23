@@ -26,3 +26,4 @@ add_paths(project_path, repos_path)
 # Import from fablib
 #
 from fablib import *
+import website
