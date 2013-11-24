@@ -1,80 +1,81 @@
-{% import '_macros.html' as macros %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-  <title>Blueline Example: Static Page</title>
-  {{ macros.blueline_head() }}
-  {{ macros.analytics() }}
+  <title>Untangled</title>
+  <!-- IE -->
+<link rel="shortcut icon" type="image/x-icon" href="http://blueline.knightlab.com/assets/logos/favicon.ico" /> 
+<!-- other browsers -->
+<link rel="icon" type="image/x-icon" href="http://blueline.knightlab.com/assets/logos/favicon.ico" />
+<!-- Optional: Knight Lab webfonts -->
+<link href="//cloud.webtype.com/css/d4767ecb-457a-4677-8761-72f890add836.css" rel="stylesheet" type="text/css">
+<!-- Note: You must include the Blueline CDN stylesheet -->
+<link rel="stylesheet" href="//cdn.knightlab.com/libs/blueline/latest/css/blueline.min.css">
+
+  <!-- Google Analytics: don't mess with this stuff -->
+<!-- named tracker notes from https://developers.google.com/analytics/devguides/collection/gajs/ -->
+<!-- multi-domain tracking notes from https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingSite -->
+<script>
+var _gaq = _gaq || [];
+_gaq.push(
+          function() {
+              var pageTracker = _gat._createTracker('UA-27829802-1', 'knightlabTracker');
+           },
+          ['knightlabTracker._setDomainName', 'knightlab.com'] // DON'T CHANGE THIS FOR SUBDOMAINS
+          ['knightlabTracker._setAllowLinker', true], 
+          ['knightlabTracker._trackPageview']
+);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!-- End Google Analytics -->
 </head>
 <body>
 
-  {{ macros.navbar() }}
+  <!-- BEGIN HEADER -->
+
+<div class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a>
+      <a href="/" class="brand">Untangled</a>
+      <div class="nav-collapse navbar-responsive-collapse collapse" style="height: 0px;">
+        
+        
+        
+        
+        
+        
+        <ul class="nav pull-right">
+          <li class="knightlab-tab"><a data-toggle="preheader" href="http://knightlab.northwestern.edu" title="Northwesten University Knight Lab"><span>Northwestern University Knight Lab</span></a></li>
+        </ul>
+      </div><!-- /.nav-collapse -->
+    </div>
+  </div><!-- /navbar-inner -->
+</div>
+<!-- END HEADER -->
 
   <!-- BEGIN CONTENT -->
   <div id="content" class="container">
-    <header id="overview" class="hero-unit compact">
-      <div class="row-fluid">
-        <hgroup class="span12">
-          <h1 class="logo-mark xl">Untangled</h1>
-          <h2 class="intro">Network Analysis for Journalism</h2>
-        </hgroup>
-      </div>
-    </header>
-
+    
     <div class="row-fluid">
       <div class="span12">
-        <h1></h1>
-        <p>Network analysis is a dramatically growing area of research in fields as diverse as epidemiology, linguistics, marketing and neurology. Journalists and news organizations have been slow to apply network analysis to information gathering and storytelling. This initiative aims to unite any and all communities interested in the application of network analysis to journalism. This could include analysts, journalists, programmers... anyone.</p>
+        <h1><a href= "http://www.washingtonpost.com/wp-srv/politics/pioneers/pioneers_spheres.html">Spheres of Influence</a></h1>
+<p><b>Organization:</b> <a href= "http://www.washingtonpost.com/">Washington Post</a></p>
+<p><b>Date:</b> May 16, 2004</p>
+<p><b>Contributors:</b> Thomas B. Edsall, Sarah Cohen and James V. Grimaldi, Mike Allen, Alice Crites contributed to this report. </p>
+<p><b>Description:</b> The Post analyzed networks of campaign contributors among "Bush Pioneers," the biggest donors to George Bush's election campaign in 2004.   The key finding was that XXXX.  The version of the story published in the print edition included a network diagram of the top contributors; the online version included a clickable, interactive version of the graphic.</p>
+<p><img src="/static/img/se.jpg" width="400" height="400"></p>
       </div>
     </div>
-    <div class="row-fluid">
-      <div class="span4">
-       <h2><a href="storyexamples.html">Stories</a></h2>
-         <p>We've compiled examples of stories that use network analysis.</p>
-      <div class="row-fluid">
-      <figure class="span12">
-       <a href="/bushwapo.html"><img src="{{ static_url }}/img/Bushwapo.jpg" width="200" height="200">
-       </figure>
-       <article class="span6">
-        <p></p>
-        </article>
-        <figure class="span12">
-       <a href="/calderon.html"><img src="/static/img/calderon.jpg" width="200" height="200"></a>
-       </figure>
-       <article class="span6">
-        <p></p>
-        </article>
-      </div>
-      </div>
-      <div class="span4">
-         <h2><a href="toolexamples.html">Tools</a></h2>
-        <p>
-        We've compiled a list of tools used to execute this analysis and visualize the results.</p>
-      <div class="row-fluid">
-       <figure class="span12">
-       <a href="/neo4j.html"><img src="static/img/neo4j.jpg" width="200" height="200"></a>
-       </figure>
-       <article class="span4">
-        <p></p>
-        </article>
-         <figure class="span12">
-        <a href="/gephi.html"><img src="/static/img/gephi.jpg" width="200" height="200"></a>
-       </figure>
-       <article class="span4">
-        <p></p>
-        </article>
-        </div>
-      </div>
-      <div class="span4">
-         <h2><a href="learnmore.html">Learn More</a></h2>
-        <p>Untangled is also a forum to help facilitate people to share their on-going research and initiatives. Read articles about and from the people doing this work and find suggestions for more reading.</p>
-        <p><ul>
-          <li>Application of Neo4J to Middle-Eastern Terrorists</li>
-          <li>How and Why I built a Network Analysis Tool Matrix</li>
-        </ul></p>
-      </div>
-    </div>
+
   </div>
   <!-- END CONTENT-->
 

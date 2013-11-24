@@ -1,80 +1,83 @@
-{% import '_macros.html' as macros %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-  <title>Blueline Example: Static Page</title>
-  {{ macros.blueline_head() }}
-  {{ macros.analytics() }}
+  <title>Untangled</title>
+  <!-- IE -->
+<link rel="shortcut icon" type="image/x-icon" href="http://blueline.knightlab.com/assets/logos/favicon.ico" /> 
+<!-- other browsers -->
+<link rel="icon" type="image/x-icon" href="http://blueline.knightlab.com/assets/logos/favicon.ico" />
+<!-- Optional: Knight Lab webfonts -->
+<link href="//cloud.webtype.com/css/d4767ecb-457a-4677-8761-72f890add836.css" rel="stylesheet" type="text/css">
+<!-- Note: You must include the Blueline CDN stylesheet -->
+<link rel="stylesheet" href="//cdn.knightlab.com/libs/blueline/latest/css/blueline.min.css">
+
+  <!-- Google Analytics: don't mess with this stuff -->
+<!-- named tracker notes from https://developers.google.com/analytics/devguides/collection/gajs/ -->
+<!-- multi-domain tracking notes from https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingSite -->
+<script>
+var _gaq = _gaq || [];
+_gaq.push(
+          function() {
+              var pageTracker = _gat._createTracker('UA-27829802-1', 'knightlabTracker');
+           },
+          ['knightlabTracker._setDomainName', 'knightlab.com'] // DON'T CHANGE THIS FOR SUBDOMAINS
+          ['knightlabTracker._setAllowLinker', true], 
+          ['knightlabTracker._trackPageview']
+);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!-- End Google Analytics -->
 </head>
 <body>
 
-  {{ macros.navbar() }}
+  <!-- BEGIN HEADER -->
+
+<div class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a>
+      <a href="/" class="brand">Untangled</a>
+      <div class="nav-collapse navbar-responsive-collapse collapse" style="height: 0px;">
+        
+        
+        
+        
+        
+        
+        <ul class="nav pull-right">
+          <li class="knightlab-tab"><a data-toggle="preheader" href="http://knightlab.northwestern.edu" title="Northwesten University Knight Lab"><span>Northwestern University Knight Lab</span></a></li>
+        </ul>
+      </div><!-- /.nav-collapse -->
+    </div>
+  </div><!-- /navbar-inner -->
+</div>
+<!-- END HEADER -->
 
   <!-- BEGIN CONTENT -->
   <div id="content" class="container">
-    <header id="overview" class="hero-unit compact">
-      <div class="row-fluid">
-        <hgroup class="span12">
-          <h1 class="logo-mark xl">Untangled</h1>
-          <h2 class="intro">Network Analysis for Journalism</h2>
-        </hgroup>
-      </div>
-    </header>
+    <h1><a href="http://www.neo4j.org/">Neo4j</a></h1>
 
+<p>Neo4J is a graph database that allows users to "ask and answer" data questions. It is a databse that allows you to model, store, and query data in the form of a graph with nodes and relationships that you can attach properties to. After structuring your graph you can query it. The data modeling experience aims to be simple and attempts to let users build a graph model that looks like the questions you want to ask of your domain.</p>
     <div class="row-fluid">
       <div class="span12">
-        <h1></h1>
-        <p>Network analysis is a dramatically growing area of research in fields as diverse as epidemiology, linguistics, marketing and neurology. Journalists and news organizations have been slow to apply network analysis to information gathering and storytelling. This initiative aims to unite any and all communities interested in the application of network analysis to journalism. This could include analysts, journalists, programmers... anyone.</p>
+<div class="span6">
+<p><img src="/static/img/neo4j.jpg" width="300" height="400"></p>
+</div>
+<div class="span6">
+<iframe src="//player.vimeo.com/video/56043918" width="400" height="375" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
       </div>
     </div>
-    <div class="row-fluid">
-      <div class="span4">
-       <h2><a href="storyexamples.html">Stories</a></h2>
-         <p>We've compiled examples of stories that use network analysis.</p>
-      <div class="row-fluid">
-      <figure class="span12">
-       <a href="/bushwapo.html"><img src="{{ static_url }}/img/Bushwapo.jpg" width="200" height="200">
-       </figure>
-       <article class="span6">
-        <p></p>
-        </article>
-        <figure class="span12">
-       <a href="/calderon.html"><img src="/static/img/calderon.jpg" width="200" height="200"></a>
-       </figure>
-       <article class="span6">
-        <p></p>
-        </article>
-      </div>
-      </div>
-      <div class="span4">
-         <h2><a href="toolexamples.html">Tools</a></h2>
-        <p>
-        We've compiled a list of tools used to execute this analysis and visualize the results.</p>
-      <div class="row-fluid">
-       <figure class="span12">
-       <a href="/neo4j.html"><img src="static/img/neo4j.jpg" width="200" height="200"></a>
-       </figure>
-       <article class="span4">
-        <p></p>
-        </article>
-         <figure class="span12">
-        <a href="/gephi.html"><img src="/static/img/gephi.jpg" width="200" height="200"></a>
-       </figure>
-       <article class="span4">
-        <p></p>
-        </article>
-        </div>
-      </div>
-      <div class="span4">
-         <h2><a href="learnmore.html">Learn More</a></h2>
-        <p>Untangled is also a forum to help facilitate people to share their on-going research and initiatives. Read articles about and from the people doing this work and find suggestions for more reading.</p>
-        <p><ul>
-          <li>Application of Neo4J to Middle-Eastern Terrorists</li>
-          <li>How and Why I built a Network Analysis Tool Matrix</li>
-        </ul></p>
-      </div>
-    </div>
+
   </div>
   <!-- END CONTENT-->
 
