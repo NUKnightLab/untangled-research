@@ -40,7 +40,7 @@ You need to have `gcc` installed.
     fab loc setup
 
     # Start the development server
-    python api.py
+    python app.py
     
 
 ## Deploying to S3 (untangled.knightlab.com)
