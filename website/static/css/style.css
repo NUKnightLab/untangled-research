@@ -1,16 +1,25 @@
 /* CSS STYLES */
 
-h5 {
-	text-align: center;
-}
-
-header > .row-fluid {
+header > .row-fluid, #about {
 	max-width: 960px;
 	margin: 0 auto;
 }
 
 hgroup > img {
 	margin: 0 0 10px -10px;
+}
+
+#content > .row-fluid {
+	max-width: 800px;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.1);
+}
+
+.boxes > h1 {
+	text-align: center;
+	margin-left: -80px;
 }
 
 @media screen and (max-width: 960px) {
@@ -20,5 +29,11 @@ hgroup > img {
 @media screen and (max-width: 500px) {
 	.compact .logo-mark.xl {
 		font-size: 50px;
+	}
+	.boxes > h1 {
+		margin-left: 0;
+	}
+	.boxes > h5 {
+		text-align: center;
 	}
 }
