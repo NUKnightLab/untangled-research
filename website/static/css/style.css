@@ -3,3 +3,18 @@
 h5 {
 	text-align: center;
 }
+
+.row-fluid {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 500px) {
+	.compact .logo-mark.xl {
+		font-size: 50px;
+	}
+}
