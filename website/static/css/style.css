@@ -22,6 +22,10 @@ hgroup > img {
 	margin-left: -80px;
 }
 
+.boxes > h5 {
+	text-align: center;
+}
+
 @media screen and (max-width: 960px) {
 }
 @media screen and (max-width: 768px) {
@@ -32,8 +36,5 @@ hgroup > img {
 	}
 	.boxes > h1 {
 		margin-left: 0;
-	}
-	.boxes > h5 {
-		text-align: center;
 	}
 }
