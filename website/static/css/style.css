@@ -47,7 +47,21 @@ img.square {
 }
 
 .info {
-	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.timestamp {
+	color: #ca4d1d;
+	text-transform: uppercase;
+	font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+.post-meta.meta-bottom {
+	font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
 }
 
 @media screen and (max-width: 960px) {
