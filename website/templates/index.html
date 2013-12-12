@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  {{ macros.navbar() }}
+  {% block navbar %}{{ macros.navbar('') }}{% endblock %}
 
   <!-- BEGIN CONTENT -->
   <header id="overview" class="hero-unit compact">
@@ -116,6 +116,5 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="//cdn.knightlab.com/libs/blueline/latest/js/blueline.min.js"></script>
-  
 </body>
 </html>

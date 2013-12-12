@@ -41,7 +41,7 @@ _gaq.push(
 {# ---------------------------------- #}
 {# - navbar()  #}
 {# ---------------------------------- #}
-{% macro navbar() -%}
+{% macro navbar(page=None) -%}
 <!-- BEGIN HEADER -->
 
 <div class="navbar navbar-fixed-top navbar-inverse">
@@ -52,13 +52,13 @@ _gaq.push(
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </a>
-      <a href="/" class="brand">Untangled</a>
+      <a href="/" class="brand active">Untangled</a>
       <div class="nav-collapse navbar-responsive-collapse collapse" style="height: 0px;">
         <ul class="nav"> 
-          <li><a href="tools.html">Tools</a></li>
-          <li><a href="stories.html">Investigations</a></li>
-          <li><a href="learn.html">Readings</a></li>
-          <li><a href="/index.html#about">About</a></li>
+          <li {% if page == 'tools' %}class='active'{% endif %}><a href="tools.html">Tools</a></li>
+          <li {% if page == 'stories' %}class='active'{% endif %}><a href="stories.html">Investigations</a></li>
+          <li {% if page == 'learn' %}class='active'{% endif %}><a href="learn.html">Readings</a></li>
+          <li {% if page == '#about' %}class='active'{% endif %}><a href="/index.html#about">About</a></li>
         </ul> 
         <ul class="nav pull-right">
           <li class="knightlab-tab"><a data-toggle="preheader" href="http://knightlab.northwestern.edu" title="Northwesten University Knight Lab"><span>Northwestern University Knight Lab</span></a></li>

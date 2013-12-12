@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  {{ macros.navbar() }}
+  {% block navbar %}{{ macros.navbar() }}{% endblock %} 
 
   <!-- BEGIN CONTENT -->
   <div id="content" class="container">
