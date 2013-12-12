@@ -1,25 +1,22 @@
 {% extends "base.html" %}
 
-{% block title %}Untangled: Tools{% endblock %}
-<<<<<<< HEAD
-{% block navbar %}{{ macros.navbar('tools') }}{% endblock %} 
-=======
+{% block title %}Untangled: Investigations{% endblock %}
+{% block navbar %}{{ macros.navbar('investigations') }}{% endblock %}
 
->>>>>>> 0f5abecef01d6758e184885a9dfef9f91113849b
 {% block content %}
 <div class="example row-fluid">
-         <h1>Tools</h1>
-  <p>Collecting data.  Storing information. Finding connections. Displaying those findings. We've gathered some notable tools that facilitate the proccess of network analysis in journalism.</p>
+        <h1>Investigations</h1>
+  <p>We're cataloguing existing investigations that use network analysis. Have another one we should include? Email us at sobermanj@u.northwestern.edu</p>
 </div>
 <div class="example row-fluid">
   <!-- NOTE: These columns do not add up to 12 because the Bootstrap 'well's' padding isn't taking into account by the responsive grid. -->
     <figure class="span2">
-      <img class="square" src="{{ static_url }}/img/Neo4j.jpg" width="200" height="300"></img>
+      <img class="square" src="{{ static_url }}/img/Bushwapo.jpg" width="200" height="300"></img>
     </figure>
   
     <article class="span9">
-       <h5>Neo4J</h5>
-       <p>Neo4J is a graph database that allows users to "ask and answer" data questions. It is a databse that allows you to model, store, and query data in the form of a graph with nodes and relationships that you can attach properties to. After structuring your graph you can query it. The data modeling experience aims to be simple and attempts to let users build a graph model that looks like the questions you want to ask of your domain.</p>
+       <h5>Bush Spheres of Influence</h5>
+       <p>"The Post analyzed networks of campaign contributors among 'Bush Pioneers', the biggest donors to George Bush's election campaign in  2004. The version of the story  published in the print edition included a network diagram of the top  contributors; the online version included a clickable, interactive  version of the graphic."</p>
     </article>
   </div>
   <div class="example row-fluid">
