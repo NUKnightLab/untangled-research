@@ -1,6 +1,6 @@
 /* CSS STYLES */
 
-header > .row-fluid, #about {
+header > .row-fluid {
 	max-width: 960px;
 	margin: 0 auto;
 }
@@ -26,6 +26,11 @@ hgroup > img {
 	text-align: center;
 }
 
+#about {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
 img.square {
 	border: 5px solid #fff;
 	-webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
@@ -38,7 +43,7 @@ img.square {
 }
 
 .example > article {
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 @media screen and (max-width: 960px) {
