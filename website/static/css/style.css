@@ -47,8 +47,16 @@ img.square {
 }
 
 .info {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin: 10px 30px 20px 0;
+	float: left;
+	width: 200px;
+	background-color: #ececec;
+	padding: 20px;
+	border-radius:10px;
+}
+
+.post-title {
+	margin-bottom: 20px;
 }
 
 .timestamp {
@@ -62,6 +70,13 @@ img.square {
 	font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
+}
+
+.bio {
+	text-transform: none;
+	margin-top: 10px;
+	line-height: 20px;
+	font-style: italic;
 }
 
 @media screen and (max-width: 960px) {
