@@ -46,6 +46,10 @@ img.square {
 	margin-top: 15px;
 }
 
+.info {
+	margin-bottom: 20px;
+}
+
 @media screen and (max-width: 960px) {
 }
 @media screen and (max-width: 768px) {
