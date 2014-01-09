@@ -1,5 +1,9 @@
 /* CSS STYLES */
 
+.container {
+	max-width: 960px;
+}
+
 header > .row-fluid {
 	max-width: 960px;
 	margin: 0 auto;
