@@ -39,7 +39,7 @@ img.square {
 	border: 5px solid #fff;
 	-webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
 	-moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
-	box-shadow: 0px 4px 2	0px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
 }
 
 .example {
