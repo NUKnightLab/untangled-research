@@ -50,3 +50,4 @@ dist
 # Local Configs #
 #################
 *_local.py
+script.js
